@@ -40,12 +40,14 @@
 </div>
 
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            cor: 'red',
-            largura: 100,
-            altura: 20
+ Vue.createApp({
+        data(){
+            return{
+
+                cor: 'red',
+                largura: 100,
+                altura: 20
+            }
         },
         computed: {
             meuEstilo() {
@@ -55,5 +57,5 @@
                 }
             }
         }
-    })
+    }).mount('#app')
 </script>

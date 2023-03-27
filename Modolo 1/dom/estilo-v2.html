@@ -32,10 +32,12 @@
 </div>
 
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            aplicarC1: false
+   Vue.createApp({
+   
+        data(){
+            return{
+                aplicarC1: false
+            }
         },
         computed: {
             estilo1() {
@@ -45,5 +47,5 @@
                 }
             }
         }
-    })
+    }).mount('#app')
 </script>

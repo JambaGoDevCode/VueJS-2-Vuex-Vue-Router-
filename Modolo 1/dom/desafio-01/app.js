@@ -1,9 +1,11 @@
-new Vue({
-    el: '#desafio',
-    data: {
-        nome: 'Ana Silva',
-        idade: 28,
-        imagem: 'http://files.cod3r.com.br/curso-vue/vue.jpg'
+Vue.createApp({
+   
+    data(){
+        return{
+            nome: 'Ana Silva',
+            idade: 28,
+            imagem: 'http://files.cod3r.com.br/curso-vue/vue.jpg'
+        }
     },
     methods: {
         idadeVezes3() {
@@ -13,4 +15,4 @@ new Vue({
             return Math.random()
         }
     }
-})
+}).mount('#desafio')
