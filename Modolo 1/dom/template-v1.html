@@ -1,14 +1,15 @@
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue"></script>
 
 <div id="app">
-    <p>{{ titulo }}</p>
+  <p>{{ titulo }}</p>
 </div>
 
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            titulo: 'Usando VueJS!'
-        }
-    })
+  Vue.createApp({
+    data() {
+      return {
+        titulo: "Usando VueJS!",
+      };
+    },
+  }).mount("#app");
 </script>
